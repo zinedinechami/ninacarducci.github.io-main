@@ -70,6 +70,14 @@ body {
 .picture img {
   width: 100%;
 }
+
+.carrousel_img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
 #about-me {
   flex: 2;
 }
@@ -117,8 +125,8 @@ body {
 }
 .gallery-item {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 440px;
+  height: 440px;
   object-fit: cover;
   padding: 0.5em;
 }
