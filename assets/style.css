@@ -6,6 +6,8 @@ body {
   font-family: "Inter";
   font-style: normal;
 }
+
+/* header  */
 .top-header {
   background-color: white;
   position: sticky;
@@ -21,6 +23,8 @@ body {
 .top-header .name {
   font-size: 26px;
 }
+
+/* nav bar */
 
 .nav ul {
   display: flex;
@@ -42,40 +46,23 @@ body {
   width: 20px;
 }
 
-#about {
-  display: flex;
-  background-color: #f6d2b8;
-  padding-inline: 100px;
-  padding-block: 100px;
-  position: relative;
-}
-
-.picture.left::before {
-  content: " ";
-  background-color: #e5975f;
-  width: 374px;
-  height: 329px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.picture {
-  flex: 1;
-  margin: 0 20px;
-  z-index: 0;
-}
-
-.picture img {
-  width: 100%;
-}
+/* carrousel section */
 
 .carrousel_img {
   display: block;
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+/* about section */
+
+#about {
+  display: flex;
+  background-color: #f6d2b8;
+  padding-inline: 100px;
+  padding-block: 100px;
+  position: relative;
 }
 
 #about-me {
@@ -96,6 +83,31 @@ body {
   width: 80%;
   font-size: 14px;
 }
+
+/* about and footer images */
+.picture.left::before {
+  content: " ";
+  background-color: #e5975f;
+  width: 374px;
+  height: 329px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.picture {
+  flex: 1;
+  margin: 0 20px;
+  z-index: 0;
+}
+
+.picture img {
+  width: 380px;
+  height: 380px;
+}
+
+/* gallery section */
 
 .title {
   text-align: center;
@@ -125,11 +137,12 @@ body {
 }
 .gallery-item {
   position: absolute;
-  width: 440px;
-  height: 440px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   padding: 0.5em;
 }
+
 .mg-prev,
 .mg-next {
   width: 30px;
@@ -141,23 +154,7 @@ body {
   font-size: 24px;
 }
 
-.quote {
-  font-family: "Spectral";
-  font-style: italic;
-  width: 70%;
-  margin: auto;
-  padding-block: 3em;
-}
-.quote__text {
-  font-family: Spectral;
-  font-style: italic;
-  font-weight: 300;
-}
-.quote__author {
-  font-family: Spectral;
-  font-weight: 800;
-  font-size: 22px;
-}
+/* services section */
 
 #services {
   margin: auto;
@@ -192,6 +189,28 @@ body {
   justify-content: space-between;
   z-index: 1;
 }
+
+/* quote section */
+
+.quote {
+  font-family: "Spectral";
+  font-style: italic;
+  width: 70%;
+  margin: auto;
+  padding-block: 3em;
+}
+.quote__text {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 300;
+}
+.quote__author {
+  font-family: Spectral;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+/* footer */
 
 #contact {
   margin: auto;
@@ -246,6 +265,8 @@ input[type="submit"] {
   padding: 0.5em 1em;
 }
 
+/* responsive */
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
@@ -270,6 +291,10 @@ input[type="submit"] {
   }
   .picture {
     width: 50%;
+  }
+  .picture img {
+    width: 305px;
+    height: 305px;
   }
   .picture.left::before {
     width: 100%;
@@ -319,6 +344,9 @@ input[type="submit"] {
     bottom: 0;
     right: 0;
     z-index: -1;
+  }
+  .carrousel_img {
+    height: 250px;
   }
 }
 
