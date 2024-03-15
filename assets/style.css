@@ -118,7 +118,7 @@ body {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: black;
   background-color: #beb45a;
   border-radius: 0;
 }
@@ -203,6 +203,7 @@ body {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
+  font-size: 2em;
 }
 .quote__author {
   font-family: Spectral;
